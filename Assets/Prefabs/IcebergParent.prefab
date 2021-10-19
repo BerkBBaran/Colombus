@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3506513364885941291}
   - component: {fileID: -817001011343996595}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IcebergParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 6099287898012259112}
   - component: {fileID: 6099287898012259115}
   - component: {fileID: 6099287898012259113}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ObstaceIceberg
   m_TagString: Untagged
   m_Icon: {fileID: 0}

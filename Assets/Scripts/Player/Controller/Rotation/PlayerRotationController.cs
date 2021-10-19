@@ -10,6 +10,7 @@ namespace Colombus.PlayerControls
         [SerializeField] private PlayerRotationSettings _rotationSettings;
         private Rigidbody2D rb;
 
+
         private void Initiliaze()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -22,33 +23,20 @@ namespace Colombus.PlayerControls
         }
         private void FixedUpdate()
         {
-            if (_inputData.Horizontal == 0)
-                NotRotating();
-            else if (_inputData.Horizontal * rb.rotation > 1)
-                InstantRotation();
-            else
-                Rotate();
+            Rotate();
         }
-
         private void Rotate()
         {
-            rb.MoveRotation(rb.rotation + _rotationSettings.RotationSpeed* Time.fixedDeltaTime*-(_inputData.Horizontal));
-        }
-        private void NotRotating()
-        {
-            if (rb.rotation < -1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.StraightenSpeed * Time.fixedDeltaTime );
-            else if (rb.rotation > 1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.StraightenSpeed * -Time.fixedDeltaTime );
-        }
-        private void InstantRotation()
-        {
-            if (rb.rotation < -1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.InstantBreakSpeed * Time.fixedDeltaTime);
-            else if (rb.rotation > 1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.InstantBreakSpeed * -Time.fixedDeltaTime );
+            Quaternion currentQua =Quaternion.Euler(0, 0, rb.rotation);
+            Quaternion targetQua = (_inputData.Horizontal < 0) ? Quaternion.Euler(Vector3.forward * _rotationSettings.DegreeLimit) :
+                Quaternion.Euler(Vector3.forward * -_rotationSettings.DegreeLimit);
+            if (_inputData.Horizontal == 0)
+                targetQua = Quaternion.Euler(Vector3.zero);
+
+            rb.MoveRotation(Quaternion.Lerp(currentQua, targetQua,Time.fixedDeltaTime * _rotationSettings.RotationSpeed));
 
         }
+       
 
     }
 }

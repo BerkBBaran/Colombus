@@ -15,7 +15,7 @@ namespace Colombus.Inputs
 
         public void ProcessInput()
         {
-            Horizontal = Input.GetAxis("Horizontal");
+            Horizontal = Input.GetAxisRaw("Horizontal");
             //Vertical = Input.GetAxis("Vertical");
         }
     }

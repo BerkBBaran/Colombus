@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6142903677233444625}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677440519902}
   - component: {fileID: 6142903677440519901}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_55 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677553620060}
   - component: {fileID: 6142903677553620051}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IslandCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677554476104}
   - component: {fileID: 6142903677554476111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677634361679}
   - component: {fileID: 6142903677634361678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677764577561}
   - component: {fileID: 6142903677764577560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677800587812}
   - component: {fileID: 6142903677800587867}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677815961407}
   - component: {fileID: 6142903677815961406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_92
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677822446346}
   - component: {fileID: 6142903677822446345}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677874444954}
   - component: {fileID: 6142903677874444953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: smalrock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903677998907171}
   - component: {fileID: 6142903677998907170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,7 +856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678015717538}
   - component: {fileID: 6142903678015717537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678076550534}
   - component: {fileID: 6142903678076550533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678166440200}
   - component: {fileID: 6142903678166440207}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1101,7 +1101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6142903678170346567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ports
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1133,7 +1133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678183978933}
   - component: {fileID: 6142903678183978932}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678192750794}
   - component: {fileID: 6142903678192750793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1297,7 +1297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678274142202}
   - component: {fileID: 6142903678274142201}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1379,7 +1379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678325574847}
   - component: {fileID: 6142903678325574846}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: smalrock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,7 +1461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678392133615}
   - component: {fileID: 6142903678392133614}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1543,7 +1543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678423948014}
   - component: {fileID: 6142903678423948013}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1625,7 +1625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678430797733}
   - component: {fileID: 6142903678430797732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1707,7 +1707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678450563925}
   - component: {fileID: 6142903678450563924}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1789,7 +1789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903678528209858}
   - component: {fileID: 6142903678528209857}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bigRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1872,7 +1872,7 @@ GameObject:
   - component: {fileID: 6142903678709049493}
   - component: {fileID: 6142903678709049483}
   - component: {fileID: 6142903678709049492}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PortCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1954,7 +1954,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1969,7 +1969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6142903679010686360}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SupplyIsland
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2004,7 +2004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142903679051918356}
   - component: {fileID: 6142903679051918347}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: portenterance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +2085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3539647108692519721}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SupplyIslandParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}

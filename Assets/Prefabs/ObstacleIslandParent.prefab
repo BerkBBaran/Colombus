@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386571941708519037}
   - component: {fileID: 386571941708519036}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: smalrock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 386571941909070067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ObstacleIsland
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386571942001226111}
   - component: {fileID: 386571942001226110}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_72
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386571942412376322}
   - component: {fileID: 386571942412376325}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IslandCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386571942545150482}
   - component: {fileID: 386571942545150485}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386571942588908451}
   - component: {fileID: 386571942588908450}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 386571942599584529}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,7 +463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386571942917395113}
   - component: {fileID: 386571942917395112}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386571943466335891}
   - component: {fileID: 386571943466335890}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tile_57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -626,7 +626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065468161897922886}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ObstacleIslandParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
