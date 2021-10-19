@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c9b8392b01d6f48a080cc1c8f44fce, type: 3}
   m_Name: ShiftingSetting
   m_EditorClassIdentifier: 
-  _shiftingSpeed: 1
+  _shiftingSpeed: 2.24

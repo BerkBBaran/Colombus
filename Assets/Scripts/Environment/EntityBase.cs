@@ -4,9 +4,12 @@ using UnityEngine;
 
 namespace Colombus.Environment
 {
-    public class EntityShifter : MonoEntity
+    public class EntityBase : MonoEntity
     {
+        // TODO: Random scaling and random rotation for obstacle islands
+
         [SerializeField] private EntityShiftingSettings _settings;
+
 
         private void Update()
         {
