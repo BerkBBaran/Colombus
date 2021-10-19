@@ -32,21 +32,21 @@ namespace Colombus.PlayerControls
 
         private void Rotate()
         {
-            rb.MoveRotation(rb.rotation + _rotationSettings.Speed* Time.fixedDeltaTime*-(_inputData.Horizontal));
+            rb.MoveRotation(rb.rotation + _rotationSettings.RotationSpeed* Time.fixedDeltaTime*-(_inputData.Horizontal));
         }
         private void NotRotating()
         {
             if (rb.rotation < -1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.Speed * Time.fixedDeltaTime *2);
+                rb.MoveRotation(rb.rotation + _rotationSettings.StraightenSpeed * Time.fixedDeltaTime );
             else if (rb.rotation > 1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.Speed * Time.fixedDeltaTime * -2f);
+                rb.MoveRotation(rb.rotation + _rotationSettings.StraightenSpeed * -Time.fixedDeltaTime );
         }
         private void InstantRotation()
         {
             if (rb.rotation < -1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.Speed * Time.fixedDeltaTime * 6);
+                rb.MoveRotation(rb.rotation + _rotationSettings.InstantBreakSpeed * Time.fixedDeltaTime);
             else if (rb.rotation > 1)
-                rb.MoveRotation(rb.rotation + _rotationSettings.Speed * Time.fixedDeltaTime * -6);
+                rb.MoveRotation(rb.rotation + _rotationSettings.InstantBreakSpeed * -Time.fixedDeltaTime );
 
         }
 

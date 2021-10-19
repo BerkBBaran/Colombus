@@ -4,36 +4,46 @@ using UnityEngine;
 
 public class SeaRepeater : MonoBehaviour
 {
-    public Transform Sea1,Sea2;
     public float speed;
 
-    private List<Transform> SeaList = new List<Transform>();
+    private List<Transform> _seaList = new List<Transform>();
     // Start is called before the first frame update
+
+    private void Initiliaze()
+    {
+        _seaList.Add(transform.GetChild(0));
+        _seaList.Add(transform.GetChild(1));
+
+    }
     void Start()
     {
-        SeaList.Add(Sea1);
-        SeaList.Add(Sea2);
+        Initiliaze();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        Sea1.position -= new Vector3(0,speed * Time.deltaTime,0);
-        Sea2.position -= new Vector3(0, speed * Time.deltaTime, 0);
-        if (SeaList[0].position.y < -15f)
-            ChangeObjects();
+        ShiftObjects();
     }
 
-
+    void ShiftObjects()
+    {
+        foreach (Transform sea in _seaList)
+        {
+            sea.position -= new Vector3(0, speed * Time.deltaTime, 0);
+        }
+        if (_seaList[0].position.y < -15f)
+            ChangeObjects();
+    }
     public void ChangeObjects()
     {
-        Vector2 tempPos = SeaList[1].position;
+        Vector2 tempPos = _seaList[1].position;
         tempPos += new Vector2(0, 20);
-        SeaList[0].position = tempPos;
+        _seaList[0].position = tempPos;
 
-        Transform tempSea = SeaList[0];
-        SeaList[0] = SeaList[1];
-        SeaList[1] = tempSea;
+        Transform tempSea = _seaList[0];
+        _seaList[0] = _seaList[1];
+        _seaList[1] = tempSea;
     }
 }
