@@ -5,8 +5,8 @@ using UnityEngine;
 
 namespace Colombus.Environment
 {
-    [CreateAssetMenu(fileName = "ShiftingSetting", menuName = "Entity/New Shifting Setting")]
-    public class EntityShiftingSettings : ScriptableObject
+    [CreateAssetMenu(fileName = "EntitySetting", menuName = "Entity/New Entity Setting")]
+    public class EntitySettings : ScriptableObject
     {
         [SerializeField] private float _shiftingSpeed;
         public float ShiftingSpeed => _shiftingSpeed;

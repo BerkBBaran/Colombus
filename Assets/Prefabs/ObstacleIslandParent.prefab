@@ -47,7 +47,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634622023770444579}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -100,7 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rarityRate: 60
   _entityType: 1
-  _settings: {fileID: 11400000, guid: b66fe427ddbbdb04795056160e9b285e, type: 2}
+  _shiftingSettings: {fileID: 11400000, guid: 234436d8f0034fa4fbc9418e1efe41ae, type: 2}
+  _spawnSettings: {fileID: 11400000, guid: 6a5a6284ddc2fec4cae33dedad4f18e3, type: 2}
 --- !u!1 &1092965889015475946
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ namespace Colombus.Environment
 {
     public class SeaRepeater : MonoEntity
     {
-        [SerializeField] private EntityShiftingSettings _settings;
+        [SerializeField] private EntitySettings _settings;
 
         private List<Transform> _seaList = new List<Transform>();
 

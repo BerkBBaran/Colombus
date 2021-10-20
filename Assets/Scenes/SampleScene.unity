@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rarityRate: 0
   _entityType: 0
-  _settings: {fileID: 11400000, guid: b66fe427ddbbdb04795056160e9b285e, type: 2}
+  _settings: {fileID: 11400000, guid: 234436d8f0034fa4fbc9418e1efe41ae, type: 2}
   _changePoint: -15
 --- !u!1 &1415126128
 GameObject:
@@ -1434,7 +1434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 857481637687032241, guid: 906f3782c098c984bbd254fa00696518, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.31
       objectReference: {fileID: 0}
     - target: {fileID: 857481637687032241, guid: 906f3782c098c984bbd254fa00696518, type: 3}
       propertyPath: m_LocalPosition.y

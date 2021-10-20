@@ -59,7 +59,13 @@ namespace Colombus
             var entity = GetRandomEntity();
             List<Transform> spawnPointList = GetProperList(entity);
             var rand = Random.Range(0, spawnPointList.Count);
-            Instantiate(entity, spawnPointList[rand].position, Quaternion.identity);
+            var instantiated = Instantiate(entity, spawnPointList[rand].position, Quaternion.identity);
+
+            // if supply spawns at last point we must mirror it
+
+            if (entity.GetEntityType == EntityType.Supply && rand == spawnPointList.Count - 1)
+                instantiated.transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            
             _isSpawnAvailable = false;
         }
 
@@ -80,6 +86,8 @@ namespace Colombus
 
         private void CheckTimer()
         {
+            // set time between spawns based on entity spawn settings
+            
             _spawnTimer += Time.deltaTime;
             if (_spawnTimer >= _timeBetweenSpawns)
             {
