@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Colombus.Environment
 {
-    public class EntityBase : MonoEntity
+    public class EntityBase : MonoEntity,IDamagable
     {
         [SerializeField] private EntitySettings _shiftingSettings;
         [SerializeField] private EntitySpawnSettings _spawnSettings;
@@ -39,6 +39,11 @@ namespace Colombus.Environment
         public override Vector3 ShiftObject(Vector3 sourcePos, Vector3 dir, float speed)
         {
             return base.ShiftObject(sourcePos, dir, speed);
+        }
+
+        public void Damage()
+        {
+            //edit later
         }
     }
 }

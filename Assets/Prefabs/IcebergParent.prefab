@@ -80,7 +80,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6099287898012259112}
   - component: {fileID: 6099287898012259115}
-  - component: {fileID: 6099287898012259113}
+  - component: {fileID: 1196319845461099795}
   m_Layer: 7
   m_Name: ObstaceIceberg
   m_TagString: Untagged
@@ -96,7 +96,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6099287898012259114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.153, y: 0.091, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 3506513364885941291}
@@ -153,8 +153,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6099287898012259113
-BoxCollider2D:
+--- !u!60 &1196319845461099795
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,6 +176,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.448, y: 3.672}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.6753303, y: -1.6452787}
+      - {x: -1.4010491, y: -1.6617186}
+      - {x: -1.3866448, y: -1.3420976}
+      - {x: -1.7336665, y: -1.1171186}
+      - {x: -1.6573589, y: 0.576731}
+      - {x: -1.1367078, y: 0.75401545}
+      - {x: -0.68809825, y: 1.4159086}
+      - {x: -0.106233336, y: 1.2292964}
+      - {x: 0.3162923, y: 1.857544}
+      - {x: 0.81885946, y: 1.4167591}
+      - {x: 1.2797192, y: 0.48508257}
+      - {x: 1.6503401, y: 0.12694922}
+      - {x: 1.4798656, y: -0.8393094}
+      - {x: 1.7475898, y: -1.4896154}
+      - {x: 0.88853914, y: -1.535517}
+      - {x: 0.18668187, y: -1.8555427}

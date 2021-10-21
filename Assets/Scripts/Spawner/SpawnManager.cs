@@ -17,7 +17,7 @@ namespace Colombus
 
         private bool _isSpawnAvailable = false;
         private float _spawnTimer = 0f;
-        private float _timeBetweenSpawns = 3f;
+        private float _timeBetweenSpawns = 2f;
 
         private void Awake()
         {
@@ -91,7 +91,7 @@ namespace Colombus
             _spawnTimer += Time.deltaTime;
             if (_spawnTimer >= _timeBetweenSpawns)
             {
-                _timeBetweenSpawns = Random.Range(.75f, 1.5f);
+                _timeBetweenSpawns = Random.Range(2f, 4f);
                 _spawnTimer = 0f;
                 _isSpawnAvailable = true;
             }
