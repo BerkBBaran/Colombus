@@ -9,18 +9,25 @@ public class UIHealth : MonoBehaviour
     //Serialize
     [SerializeField] private List<GameObject> _heartList;
     [SerializeField] private Color _emptyHeartColor;
-    [SerializeField] private CollisionManager _collisionManager;
+    
+    private CollisionManager _collisionManager;
 
     //private fields
 
     private int currentHearts;
 
-    // Start is called before the first frame update
+
+    private void Awake()
+    {
+        _collisionManager = FindObjectOfType<CollisionManager>();
+    }
+
     void Start()
     {
         currentHearts = _heartList.Count;
 
     }
+
     public void RemoveHeart()
     {
         if (currentHearts > 0)

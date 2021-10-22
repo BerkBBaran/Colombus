@@ -902,7 +902,6 @@ MonoBehaviour:
   - {fileID: 1100863256}
   - {fileID: 2063229795}
   _emptyHeartColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
-  _collisionManager: {fileID: 932468195}
 --- !u!1 &693583428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,9 +1048,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 932468192}
-  - component: {fileID: 932468191}
   - component: {fileID: 932468193}
   - component: {fileID: 932468194}
+  - component: {fileID: 932468191}
   - component: {fileID: 932468195}
   m_Layer: 6
   m_Name: PlayerParent
@@ -1109,7 +1108,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!114 &932468194
 MonoBehaviour:
   m_ObjectHideFlags: 0

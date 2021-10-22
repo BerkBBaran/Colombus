@@ -7,7 +7,9 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance=null;
 
     [SerializeField] private GameObject _playerParent;
-    [SerializeField] private float _ghostTime;
+    [SerializeField] private float _ghostTime = 3f;
+
+
     void Awake()
     {
         if (Instance == null)
@@ -18,30 +20,34 @@ public class PlayerManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public IEnumerator GhostModeRoutine()
     {
-        
+        GhostModeOn();
+        yield return new WaitForSeconds(_ghostTime);
+
+        ExitGhostMode();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void GhostModeOn()
     {
-        
+        // Ghost Player layer
+        SetLayer(_playerParent, 10);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void ExitGhostMode()
     {
-        print("sa");
+        // Normal Player layer
+        SetLayer(_playerParent, 6);
     }
-    public void TakeDamage()
-    {
-        _playerParent.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-        Invoke(nameof(ReturnRigidbody), _ghostTime);
 
-    }
-    private void ReturnRigidbody()
+    private void SetLayer(GameObject go, int layerNum)
     {
-        _playerParent.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        go.layer = layerNum;
+
+        foreach (Transform child in go.transform)
+        {
+            SetLayer(child.gameObject, layerNum);
+        }
     }
 }
