@@ -14,7 +14,7 @@ public class CollisionManager : MonoBehaviour
         {
             collision.gameObject.GetComponent<IDamagable>().Damage();
 
-            PlayerManager.Instance.StartCoroutine("GhostModeRoutine");
+            PlayerGhostModeController.Instance.StartCoroutine("GhostModeRoutine");
             OnTakeDamage?.Invoke();
         }
     }

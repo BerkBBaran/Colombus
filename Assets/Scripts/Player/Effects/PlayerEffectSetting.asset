@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae4988a18e735164c94894bf7885c359, type: 3}
-  m_Name: EntitySetting
+  m_Script: {fileID: 11500000, guid: d22594a3b2450ce43849313eef2e0e4c, type: 3}
+  m_Name: PlayerEffectSetting
   m_EditorClassIdentifier: 
-  _shiftingSpeed: 1
+  _flashingEffectTargetAlpha: 0.5
+  _flashingEffectCount: 3

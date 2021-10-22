@@ -85,9 +85,7 @@ namespace Colombus
         }
 
         private void CheckTimer()
-        {
-            // set time between spawns based on entity spawn settings
-            
+        {            
             _spawnTimer += Time.deltaTime;
             if (_spawnTimer >= _timeBetweenSpawns)
             {

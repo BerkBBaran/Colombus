@@ -3,6 +3,13 @@ using UnityEngine;
 
 namespace Colombus.Environment
 {
+    public enum EntityType
+    {
+        Supply,
+        SmallObstacle,
+        BigObstacle,
+    }
+
     public class MonoEntity : MonoBehaviour
     {
         [Range(0,100f)]
