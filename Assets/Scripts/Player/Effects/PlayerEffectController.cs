@@ -8,36 +8,44 @@ namespace Colombus.PlayerEffects
     {
         [SerializeField] private ScriptablePlayerEffectSettings _effectSettings;
 
+        PlayerGhostModeController playerGhostModeController;
+
+        private void Awake()
+        {
+            playerGhostModeController = GetComponent<PlayerGhostModeController>();
+        }
+
         private void OnEnable()
         {
-            PlayerGhostModeController.Instance.OnGhostModeStarted += FlashingEffect;
+            playerGhostModeController.OnGhostModeStarted += FlashingEffect;
         }
 
         public void FlashingEffect(GameObject go, float duration)
         {
+            if (go == null)
+            {
+                Debug.Log("null");
+            }
             StartCoroutine(FlashingEffectRoutine(go, duration));
         }
 
         private IEnumerator FlashingEffectRoutine(GameObject go, float duration)
         {
-            Debug.Log("Coroutine started");
-            Image image = go.GetComponent<Image>();
-            float initialAlpha = image.color.a;
             float timeBetweenFlashes = (float)(duration / (2 * _effectSettings.FlashingEffectCount));
             WaitForSeconds seconds = new WaitForSeconds(timeBetweenFlashes);
 
             for (int i = 0; i < _effectSettings.FlashingEffectCount; i++)
             {
-                image.CrossFadeAlpha(_effectSettings.FlashingEffectTargetAlpha, timeBetweenFlashes, false);
+                LeanTween.alpha(go, _effectSettings.FlashingEffectTargetAlpha, timeBetweenFlashes);
                 yield return seconds;
-                image.CrossFadeAlpha(initialAlpha, timeBetweenFlashes, false);
+                LeanTween.alpha(go, 1, timeBetweenFlashes);
                 yield return seconds;
             }
         }
 
         private void OnDisable()
         {
-            PlayerGhostModeController.Instance.OnGhostModeStarted -= FlashingEffect;
+            playerGhostModeController.OnGhostModeStarted -= FlashingEffect;
         }
     }
 }

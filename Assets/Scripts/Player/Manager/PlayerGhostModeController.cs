@@ -5,23 +5,9 @@ using System;
 
 public class PlayerGhostModeController : MonoBehaviour
 {
-    public static PlayerGhostModeController Instance = null;
-
-    [SerializeField] private GameObject _playerParent;
     [SerializeField] private float _ghostTime = 3f;
 
     public event Action<GameObject, float> OnGhostModeStarted;
-
-
-    void Awake()
-    {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
-
-        DontDestroyOnLoad(gameObject);
-    }
 
     public IEnumerator GhostModeRoutine()
     {
@@ -34,15 +20,15 @@ public class PlayerGhostModeController : MonoBehaviour
     private void GhostModeOn()
     {
         // Ghost Player layer
-        SetLayer(_playerParent, 10);
-        // pass child as parameter
-        OnGhostModeStarted?.Invoke(_playerParent, _ghostTime);
+        SetLayer(gameObject, 10);
+
+        OnGhostModeStarted?.Invoke(gameObject, _ghostTime);
     }
 
     private void ExitGhostMode()
     {
         // Normal Player layer
-        SetLayer(_playerParent, 6);
+        SetLayer(gameObject, 6);
     }
 
     private void SetLayer(GameObject go, int layerNum)

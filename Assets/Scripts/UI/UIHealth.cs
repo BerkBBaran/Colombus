@@ -2,18 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class UIHealth : MonoBehaviour
 {
-    //Serialize
     [SerializeField] private List<GameObject> _heartList;
-    [SerializeField] private Color _emptyHeartColor;
     
     private CollisionManager _collisionManager;
 
-    //private fields
-
     private int currentHearts;
+
+    public event Action<RectTransform> OnHeartRemoved;
 
 
     private void Awake()
@@ -32,8 +31,8 @@ public class UIHealth : MonoBehaviour
         if (currentHearts > 0)
         {
             var heart = _heartList[currentHearts-1];
+            OnHeartRemoved?.Invoke(heart.GetComponent<RectTransform>());
             --currentHearts;
-            heart.GetComponent<Image>().color = _emptyHeartColor;
         }
     }
     private void OnEnable()
