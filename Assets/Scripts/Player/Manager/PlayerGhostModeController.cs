@@ -40,4 +40,5 @@ public class PlayerGhostModeController : MonoBehaviour
             SetLayer(child.gameObject, layerNum);
         }
     }
+    
 }

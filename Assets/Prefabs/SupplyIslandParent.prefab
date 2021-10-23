@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa55e4cef912fbb488532a1597299571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rarityRate: 10
+  _rarityRate: 5
   _entityType: 0
   _shiftingSettings: {fileID: 11400000, guid: 234436d8f0034fa4fbc9418e1efe41ae, type: 2}
   _spawnSettings: {fileID: 11400000, guid: 5f54de4bfb4ef044aaaa7dd13d210dc5, type: 2}

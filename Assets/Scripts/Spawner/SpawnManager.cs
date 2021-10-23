@@ -89,7 +89,7 @@ namespace Colombus
             _spawnTimer += Time.deltaTime;
             if (_spawnTimer >= _timeBetweenSpawns)
             {
-                _timeBetweenSpawns = Random.Range(2f, 4f);
+                _timeBetweenSpawns = Random.Range(1f, 2f);
                 _spawnTimer = 0f;
                 _isSpawnAvailable = true;
             }

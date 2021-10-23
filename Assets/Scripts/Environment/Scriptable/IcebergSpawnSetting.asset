@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4191324e2b7026d419f81763dbb382b4, type: 3}
   m_Name: IcebergSpawnSetting
   m_EditorClassIdentifier: 
-  _maxScalingRate: 1.5
+  _maxScalingRate: 1.1
   _timeBetweenSpawns: 1
-  _isScalingActive: 0
-  _isRotatingActive: 0
+  _isScalingActive: 1
+  _isRotatingActive: 1

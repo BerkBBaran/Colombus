@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd50e9f1925f364592a864de4e18f63, type: 3}
   m_Name: HeartEffectSetting
   m_EditorClassIdentifier: 
-  _heartFadingTime: 1
-  _targetColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0}
+  _heartFadingTime: 2
+  _targetColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.3882353}
